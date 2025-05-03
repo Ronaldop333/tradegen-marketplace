@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>AiTradeX - New Experience in Trade AI</title>
+        <title>IATradeX - New Experience in Trade AI</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
