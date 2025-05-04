@@ -1,5 +1,11 @@
-{ "name": "tradegen-backend", "version": "1.0.0", "dependencies": { "express": "^4.18.2" } }
-
-"scripts": {
-  "start": "node index.js"
-}
+{
+    "name": "tradegen-backend",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2"
+    }
+  }
+  
