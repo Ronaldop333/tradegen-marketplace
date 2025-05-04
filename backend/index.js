@@ -1,24 +1,11 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const port = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000; // <- ESSENCIAL usar process.env.PORT
 
-// Middlewares (se houver)
-app.use(express.json());
-
-// Rotas base
-app.get('/', (req, res) => {
-  res.send('🚀 TradeGen API Online');
+app.get("/", (req, res) => {
+  res.send("API do Tradegen rodando com sucesso!");
 });
 
-app.get('/status', (req, res) => {
-  res.json({ status: 'ok', time: new Date().toISOString() });
-});
-
-// Suas rotas reais
-const routes = require('./routes');
-app.use('/api', routes);
-
-// Inicializa o servidor
-app.listen(port, () => {
-  console.log(`Servidor rodando na porta ${port}`);
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
 });
