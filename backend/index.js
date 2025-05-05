@@ -9,16 +9,23 @@ const HOST = process.env.HOST || '127.0.0.1';
 
 // Middleware CORS dinâmico seguro
 app.use(cors({
-  origin: function (origin, callback) {
-    const allowed = process.env.ALLOWED_ORIGINS?.split(',') || [];
-    if (!origin || allowed.includes(origin)) {
-      callback(null, true);
-    } else {
+    origin: function (origin, callback) {
+      const whitelist = process.env.ALLOWED_ORIGINS?.split(',') || [];
+  
+      if (!origin) {
+        // Permite chamadas internas ou ferramentas como curl
+        return callback(null, true);
+      }
+  
+      if (whitelist.includes(origin)) {
+        return callback(null, true);
+      }
+  
+      console.warn(`🔒 CORS bloqueado para origem: ${origin}`);
       callback(new Error('Not allowed by CORS'));
     }
-  }
-}));
-
+  }));
+  
 // Endpoint de status simples
 app.get('/api/status', (req, res) => {
   res.json({ status: 'online', timestamp: Date.now() });
