@@ -1,12 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     async rewrites() {
-      // Aplica reescrita apenas quando em ambiente Vercel
       return process.env.VERCEL
         ? [
             {
               source: '/api/:path*',
               destination: `${process.env.BACKEND_URL}/api/:path*`,
+            },
+            {
+              source: '/debug',
+              destination: `${process.env.BACKEND_URL}/debug`,
             },
           ]
         : [];
