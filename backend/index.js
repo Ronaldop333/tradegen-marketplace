@@ -42,6 +42,27 @@ app.get('/debug', async (req, res) => {
   }
 });
 
+
+// Mock simples de usuários
+const users = [];
+
+// GET /api/users - lista usuários
+app.get('/api/users', (req, res) => {
+  res.json(users);
+});
+
+// POST /api/users - adiciona usuário
+app.use(express.json());
+app.post('/api/users', (req, res) => {
+  const { name, email } = req.body;
+  if (!name || !email) return res.status(400).json({ error: 'Name and email required' });
+
+  const user = { id: Date.now(), name, email };
+  users.push(user);
+  res.status(201).json(user);
+});
+
+
 // Inicializa o servidor
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Servidor rodando na porta ${PORT}`);
