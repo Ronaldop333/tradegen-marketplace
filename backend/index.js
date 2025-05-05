@@ -7,9 +7,16 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || '127.0.0.1';
 
-// Middleware CORS dinâmico
+// Middleware CORS dinâmico seguro
 app.use(cors({
-  origin: process.env.ALLOWED_ORIGINS?.split(',') || '*',
+  origin: function (origin, callback) {
+    const allowed = process.env.ALLOWED_ORIGINS?.split(',') || [];
+    if (!origin || allowed.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
 }));
 
 // Endpoint de status simples
