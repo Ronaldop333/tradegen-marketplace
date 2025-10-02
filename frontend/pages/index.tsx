@@ -26,9 +26,9 @@ export default function Home() {
       </h1>
 
       <p style={{ maxWidth: "700px", textAlign: "center", fontSize: "1.1rem" }}>
-        Desenvolvemos soluções inteligentes para o ambiente de trading.<br />
+        Desenvolvemos soluções inteligentes para o ambiente de trading.
         Automatizamos operações, integramos ferramentas, criamos
-        sistemas personalizados para gestão de capital, risco e controle emocional.
+        sistemas personalizados para gestão  risco e controle emocional.
       </p>
 
       <p style={{ maxWidth: "700px", textAlign: "center", fontSize: "1.1rem", marginTop: "0.5rem" }}>
