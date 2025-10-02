@@ -27,12 +27,12 @@ export default function Home() {
 
       <p style={{ maxWidth: "700px", textAlign: "center", fontSize: "1.1rem" }}>
         Desenvolvemos soluções inteligentes para o ambiente de trading.<br />
-        Automatizamos operações, integramos ferramentas, criamos
-        sistemas personalizados para gestão de capital, risco e controle emocional.
+        Automatizamos operações, integramos ferramentas, criamos sistemas personalizados
+        para gestão de capital, risco e controle emocional.
       </p>
 
       <p style={{ maxWidth: "700px", textAlign: "center", fontSize: "1.1rem", marginTop: "0.5rem" }}>
-        Descubra as nossas soluções profissionais e passe a ser um Trader de alta performance.
+        Descubra o Tradgen System e passe a ser um Trader de alta performance.
       </p>
 
       <div style={{ display: "flex", gap: "2rem", marginTop: "3rem", flexWrap: "wrap" }}>
@@ -113,11 +113,6 @@ export default function Home() {
 
       <footer style={{ marginTop: "4rem", fontSize: "0.9rem", color: "#999" }}>
         © 2025 TradGen. Todos os direitos reservados.
-      </footer>
-    </div>
-  );
-}
-
       </footer>
     </div>
   );
