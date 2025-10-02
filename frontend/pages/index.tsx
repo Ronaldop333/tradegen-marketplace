@@ -1,4 +1,5 @@
 import React from "react";
+import { ProductCard } from "../components/ProductCard";
 
 export default function Home() {
   const products = [
@@ -7,14 +8,14 @@ export default function Home() {
       tagline: "Quando a maioria entra atrasada, ele já está saindo com lucro.",
       description:
         "Especialista em reversões curtas e rápidas com base em Renko 50R. Ideal para scalpers que operam até o meio-dia.",
-      url: "https://www.nelogica.com.br/marketplace/produto/tradgen-predator", // substitua com URL real
+      url: "https://www.nelogica.com.br/marketplace/produto/tradgen-predator",
     },
     {
       name: "TradGen SCALPER",
       tagline: "Alta frequência. Alta eficiência. Sem ruído.",
       description:
         "Feito para quem busca setups objetivos, rápidos e limpos. Roda com até 5 contratos sem comprometer performance.",
-      url: "https://www.nelogica.com.br/marketplace/produto/tradgen-scalper", // substitua com URL real
+      url: "https://www.nelogica.com.br/marketplace/produto/tradgen-scalper",
     },
   ];
 
@@ -48,37 +49,7 @@ export default function Home() {
         }}
       >
         {products.map((product, index) => (
-          <div
-            key={index}
-            style={{
-              backgroundColor: "#2b2b2b",
-              borderRadius: "12px",
-              padding: "2rem",
-              maxWidth: "350px",
-              minHeight: "250px",
-              boxShadow: "0 0 10px rgba(0, 255, 204, 0.1)",
-              textAlign: "left",
-            }}
-          >
-            <h2 style={{ color: "#00ffcc", fontSize: "1.5rem" }}>{product.name}</h2>
-            <p style={{ fontWeight: "bold", marginBottom: "0.5rem" }}>{product.tagline}</p>
-            <p style={{ fontSize: "0.95rem", marginBottom: "1rem" }}>{product.description}</p>
-            <a
-              href={product.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: "#1e1e1e",
-                backgroundColor: "#00ffcc",
-                padding: "0.6rem 1.2rem",
-                borderRadius: "8px",
-                fontWeight: "bold",
-                textDecoration: "none",
-              }}
-            >
-              Ver na Loja
-            </a>
-          </div>
+          <ProductCard key={index} {...product} />
         ))}
       </div>
 
