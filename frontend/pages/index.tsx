@@ -16,7 +16,7 @@ export default function Home() {
       }}
     >
       <img
-        src="/logo.png" // <- certifique-se que o logo esteja em /public/logo.png
+        src="/logo-tradgen.png" // <- certifique-se que o logo esteja em /public/logo.png
         alt="TradGen Logo"
         style={{ width: "140px", marginBottom: "2rem" }}
       />
