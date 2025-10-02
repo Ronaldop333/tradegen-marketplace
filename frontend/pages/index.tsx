@@ -85,11 +85,11 @@ export default function Home() {
         >
           <h2 style={{ color: "#00ffcc" }}>TradGen SUIT INDICADORS</h2>
           <p style={{ fontWeight: "bold", marginTop: "1rem" }}>
-            SUIT SYSTEM Com um pacote de Indicadores.
+            Suit indicadors... um pacote de Indicadores.
           </p>
           <p style={{ marginTop: "0.5rem" }}>
             Feito para quem busca setups objetivos, rápidos e limpos.
-            Aqui o Tradgen tida o Caminho, basta seguir!
+            Aqui o Tradgen indica o Caminho, Basta Seguir!
           </p>
           <a
             href="https://loja.nelogica.com.br"
