@@ -28,7 +28,7 @@ export default function Home() {
       <p style={{ maxWidth: "700px", textAlign: "center", fontSize: "1.1rem" }}>
         Desenvolvemos soluções inteligentes para o ambiente de trading.
         Automatizamos operações, integramos ferramentas. Criamos
-        sistemas personalizados para gestão  risco e controle emocional.
+        sistemas personalizados para Gestão de Risco e Controle Emocional.
       </p>
 
       <p style={{ maxWidth: "700px", textAlign: "center", fontSize: "1.1rem", marginTop: "0.5rem" }}>
