@@ -32,7 +32,7 @@ export default function Home() {
       </p>
 
       <p style={{ maxWidth: "700px", textAlign: "center", fontSize: "1.1rem", marginTop: "0.5rem" }}>
-        Descubra o Tradgen System e passe a ser um Trader de alta performance.
+        Descubra o Tradgen System e seja um Trader de alta performance.
       </p>
 
       <div style={{ display: "flex", gap: "2rem", marginTop: "3rem", flexWrap: "wrap" }}>
@@ -83,9 +83,9 @@ export default function Home() {
             boxShadow: "0 0 10px rgba(0,255,204,0.1)",
           }}
         >
-          <h2 style={{ color: "#00ffcc" }}>TradGen SUIT INDICADORS</h2>
+          <h2 style={{ color: "#00ffcc" }}>TradGen SUITE INDICADORS</h2>
           <p style={{ fontWeight: "bold", marginTop: "1rem" }}>
-            Suit indicadors... um pacote de Indicadores.
+            Suite indicadors... um pacote de Indicadores.
           </p>
           <p style={{ marginTop: "0.5rem" }}>
             Feito para quem busca setups objetivos, rápidos e limpos.
