@@ -30,6 +30,13 @@ export default function Home() {
         textAlign: "center",
       }}
     >
+
+      <img 
+  src="/logo-tradgen.png" 
+  alt="TradGen Logo" 
+  style={{ width: "120px", marginBottom: "1rem" }} 
+      />
+
       <h1 style={{ fontSize: "2.5rem", color: "#00ffcc", marginBottom: "1rem" }}>
         👋 Bem-vindo ao TradGen Marketplace
       </h1>
