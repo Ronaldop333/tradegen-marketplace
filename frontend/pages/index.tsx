@@ -46,7 +46,7 @@ export default function Home() {
             boxShadow: "0 0 10px rgba(0,255,204,0.1)",
           }}
         >
-          <h2 style={{ color: "#00ffcc" }}>TradGen PREDATOR</h2>
+          <h2 style={{ color: "#00ffcc" }}>TradGen IA   PREDATOR</h2>
           <p style={{ fontWeight: "bold", marginTop: "1rem" }}>
             Quando a maioria entra atrasada, ele já está saindo com lucro.
           </p>
