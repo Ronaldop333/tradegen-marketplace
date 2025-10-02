@@ -27,7 +27,7 @@ export default function Home() {
 
       <p style={{ maxWidth: "700px", textAlign: "center", fontSize: "1.1rem" }}>
         Desenvolvemos soluções inteligentes para o ambiente de trading.
-       <br Automatizamos operações, integramos ferramentas, criamos >
+        Automatizamos operações, integramos ferramentas, criamos
         sistemas personalizados para gestão de capital, risco e controle emocional.
       </p>
 
