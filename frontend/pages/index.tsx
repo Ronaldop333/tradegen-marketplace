@@ -16,7 +16,7 @@ export default function Home() {
       }}
     >
       <img
-        src="/logo-tradgen.png" // <- certifique-se que o logo esteja em /public/logo.png
+        src="/logo-tradgen.png"
         alt="TradGen Logo"
         style={{ width: "140px", marginBottom: "2rem" }}
       />
@@ -26,14 +26,13 @@ export default function Home() {
       </h1>
 
       <p style={{ maxWidth: "700px", textAlign: "center", fontSize: "1.1rem" }}>
-        Desenvolvemos soluções inteligentes para o ambiente de trading.
+        Desenvolvemos soluções inteligentes para o ambiente de trading.<br />
         Automatizamos operações, integramos ferramentas, criamos
         sistemas personalizados para gestão de capital, risco e controle emocional.
       </p>
 
       <p style={{ maxWidth: "700px", textAlign: "center", fontSize: "1.1rem", marginTop: "0.5rem" }}>
-        Descubra as nossas soluções profissionais e passe a ser um Trader de  alta performance.
-       
+        Descubra as nossas soluções profissionais e passe a ser um Trader de alta performance.
       </p>
 
       <div style={{ display: "flex", gap: "2rem", marginTop: "3rem", flexWrap: "wrap" }}>
@@ -56,7 +55,7 @@ export default function Home() {
             Ideal para scalpers que operam até o meio-dia.
           </p>
           <a
-            href="https://loja.nelogica.com.br" // <- ajuste depois com o link final
+            href="https://loja.nelogica.com.br"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -114,6 +113,11 @@ export default function Home() {
 
       <footer style={{ marginTop: "4rem", fontSize: "0.9rem", color: "#999" }}>
         © 2025 TradGen. Todos os direitos reservados.
+      </footer>
+    </div>
+  );
+}
+
       </footer>
     </div>
   );
