@@ -51,8 +51,8 @@ export default function Home() {
             Quando a maioria entra atrasada, ele já está saindo com lucro.
           </p>
           <p style={{ marginTop: "0.5rem" }}>
-            Especialista em reversões curtas e rápidas com base em Renko 50R.
-            Ideal para scalpers que operam até o meio-dia.
+            Especialista em Gráficos renko com foco no 50R .
+            Ideal para quem busca Lucros Consistentes.
           </p>
           <a
             href="https://loja.nelogica.com.br"
@@ -83,13 +83,13 @@ export default function Home() {
             boxShadow: "0 0 10px rgba(0,255,204,0.1)",
           }}
         >
-          <h2 style={{ color: "#00ffcc" }}>TradGen SCALPER</h2>
+          <h2 style={{ color: "#00ffcc" }}>TradGen SUIT INDICADORS</h2>
           <p style={{ fontWeight: "bold", marginTop: "1rem" }}>
-            Alta frequência. Alta eficiência. Sem ruído.
+            SUIT SYSTEM Com um pacote de Indicadores.
           </p>
           <p style={{ marginTop: "0.5rem" }}>
             Feito para quem busca setups objetivos, rápidos e limpos.
-            Roda com até 5 contratos sem comprometer performance.
+            Aqui o Tradgen tida o Caminho, basta seguir!
           </p>
           <a
             href="https://loja.nelogica.com.br"
