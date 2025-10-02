@@ -26,9 +26,9 @@ export default function Home() {
       </h1>
 
       <p style={{ maxWidth: "700px", textAlign: "center", fontSize: "1.1rem" }}>
-        O TradGen desenvolve soluções inteligentes para o ambiente de trading.
-        Automatiza operações, integra ferramentas, e cria sistemas personalizados
-        para gestão de capital, risco e controle emocional.
+        Desenvolvemos soluções inteligentes para o ambiente de trading.
+        Automatizamos operações, integramos ferramentas, e criamos 
+        sistemas personalizadospara gestão de capital, risco e controle emocional.
       </p>
 
       <p style={{ maxWidth: "700px", textAlign: "center", fontSize: "1.1rem", marginTop: "0.5rem" }}>
