@@ -27,13 +27,13 @@ export default function Home() {
 
       <p style={{ maxWidth: "700px", textAlign: "center", fontSize: "1.1rem" }}>
         Desenvolvemos soluções inteligentes para o ambiente de trading.
-        Automatizamos operações, integramos ferramentas, e criamos 
-        sistemas personalizadospara gestão de capital, risco e controle emocional.
+       <br Automatizamos operações, integramos ferramentas,/br>  criamos 
+        sistemas personalizados para gestão de capital, risco e controle emocional.
       </p>
 
       <p style={{ maxWidth: "700px", textAlign: "center", fontSize: "1.1rem", marginTop: "0.5rem" }}>
-        Descubra robôs operacionais, termômetros de mercado e estratégias de alta performance,
-        pensadas para traders profissionais.
+        Descubra as nossas soluções profissionais e passe a ser um Trader de  alta performance.
+       
       </p>
 
       <div style={{ display: "flex", gap: "2rem", marginTop: "3rem", flexWrap: "wrap" }}>
