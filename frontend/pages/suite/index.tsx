@@ -3,6 +3,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles.module.css'
 
+<Image src="/suite/exemplo1.png" ... />
+<Image src="/suite/exemplo2.png" ... />
+
+
 export default function TradGen() {
   return (
     <>
