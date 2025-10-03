@@ -1,4 +1,39 @@
-@import './theme.css';
+:root {
+  /* 🎨 Paleta Dark refinada - Base */
+  --color-bg: #0a0a12;        /* Deep Space - mais escuro */
+  --color-bg-alt: #151522;    /* Neural Dark - para cards */
+  --color-text: #ffffff;      /* texto branco puro */
+  --color-muted: #a0a0c0;     /* texto neural azulado */
+  --color-border: #2d3748;
+
+  /* ⚡ Destaques Cyber - Mantendo sua identidade */
+  --color-primary: #00f0ff;   /* Cyber Blue - mais tecnológico */
+  --color-primary-dark: #00b39c;
+  --color-secondary: #00ff88; /* Matrix Green */
+  --color-accent: #8a2be2;    /* Neon Purple */
+  --color-shadow: rgba(0, 240, 255, 0.3);
+
+  /* 🌀 Novas cores para efeitos */
+  --color-grid: rgba(0, 240, 255, 0.1);
+  --color-glow: rgba(0, 240, 255, 0.5);
+
+  /* 🔠 Tipografia */
+  --font-base: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+  --font-size-base: 16px;
+  --font-size-h1: 3rem;
+  --font-size-h2: 2rem;
+
+  /* 📏 Espaçamento */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+
+  /* 🌈 Gradientes */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  --gradient-bg: linear-gradient(135deg, var(--color-bg) 0%, #0f0f1a 100%);
+}
 
 * {
   margin: 0;
@@ -7,30 +42,10 @@
 }
 
 body {
-  font-family: var(--font-base);
-  font-size: var(--font-size-base);
-  background: var(--color-bg);   /* dark fixo */
+  background: var(--gradient-bg);
   color: var(--color-text);
+  font-family: var(--font-base);
   line-height: 1.6;
-}
-
-a {
-  color: var(--color-primary);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--color-primary-dark);
-}
-
-/* Transição suave apenas para imagens e cards */
-img, .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Pequeno destaque no hover dos cards */
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 15px var(--color-shadow);
+  overflow-x: hidden;
 }
 
