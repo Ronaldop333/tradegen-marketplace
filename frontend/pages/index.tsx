@@ -9,8 +9,7 @@ export default function Home() {
         color: "var(--color-text)",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
+        alignItems: "center",   // ✅ removi justifyContent para não cortar a página
         fontFamily: "Segoe UI, Roboto, sans-serif",
         padding: "2rem",
       }}
@@ -67,6 +66,7 @@ export default function Home() {
           gap: "2rem",
           marginTop: "3rem",
           flexWrap: "wrap",
+          justifyContent: "center",  // ✅ centraliza os cards no container
         }}
       >
         {/* Produto 1: Predator */}
@@ -162,6 +162,4 @@ export default function Home() {
     </div>
   );
 }
-
-
 
