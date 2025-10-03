@@ -1,1 +1,156 @@
-export default function Header() { return <header>TradeGen</header> }
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(10, 10, 18, 0.9);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  padding: 1rem 0;
+}
+
+.header.scrolled {
+  background: rgba(10, 10, 18, 0.95);
+  border-bottom-color: var(--color-primary);
+  padding: 0.75rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+/* Logo Holográfico */
+.logo {
+  text-decoration: none;
+}
+
+.logoHologram {
+  position: relative;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-primary);
+  background: rgba(0, 240, 255, 0.05);
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+  overflow: hidden;
+}
+
+.logoGlow {
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 20px var(--color-glow);
+}
+
+.logoScanline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 240, 255, 0.1) 50%,
+    transparent 100%
+  );
+  animation: scanline 2s linear infinite;
+}
+
+/* Navegação */
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.navLink:hover {
+  color: var(--color-text);
+  border-color: var(--color-primary);
+  background: rgba(0, 240, 255, 0.1);
+}
+
+.navIcon {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Botão CTA */
+.cyberButton {
+  position: relative;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--color-secondary);
+  background: rgba(0, 255, 136, 0.1);
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.cyberButton:hover {
+  background: rgba(0, 255, 136, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+}
+
+.buttonGlow {
+  position: relative;
+  z-index: 2;
+}
+
+/* Animações */
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .nav {
+    gap: 1rem;
+  }
+  
+  .navLink {
+    font-size: 0.7rem;
+    padding: 0.25rem;
+  }
+  
+  .navIcon {
+    font-size: 1rem;
+  }
+}
