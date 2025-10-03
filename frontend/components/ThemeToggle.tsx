@@ -7,9 +7,23 @@ export default function ThemeToggle() {
     document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);
 
+  const toggleTheme = () => {
+    const html = document.documentElement;
+
+    // adiciona classe temporária para efeito de blur
+    html.classList.add("theme-transition");
+
+    // remove o blur depois de 300ms
+    setTimeout(() => {
+      html.classList.remove("theme-transition");
+    }, 300);
+
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
   return (
     <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={toggleTheme}
       style={{
         position: "fixed",
         bottom: "20px",
@@ -30,16 +44,9 @@ export default function ThemeToggle() {
         transition: "all 0.3s ease",
         zIndex: 9999,
       }}
-      onMouseEnter={(e) =>
-        ((e.target as HTMLButtonElement).style.boxShadow =
-          "0 0 20px var(--color-primary)")
-      }
-      onMouseLeave={(e) =>
-        ((e.target as HTMLButtonElement).style.boxShadow =
-          "0 0 12px var(--color-shadow)")
-      }
     >
       {theme === "dark" ? "☀️" : "🌙"}
     </button>
   );
 }
+
