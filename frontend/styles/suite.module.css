@@ -1,62 +1,23 @@
 .header {
   text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(180deg, #0f0f0f 0%, #0a0a0a 100%);
-  border-bottom: 2px solid #00ffe0;
+  padding: var(--space-xl) var(--space-md);
+  background: linear-gradient(180deg, #0f0f0f 0%, var(--color-bg) 100%);
+  border-bottom: 2px solid var(--color-primary);
 }
 
 .header h1 {
-  font-size: 2.5rem;
-  color: #00ffe0;
+  font-size: var(--font-size-h1);
+  color: var(--color-primary);
 }
 
 .header p {
   font-size: 1.2rem;
-  color: #bbb;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  color: var(--color-muted);
 }
 
 .gallery img {
   border-radius: 8px;
-  border: 1px solid #222;
-  box-shadow: 0 0 12px rgba(0, 255, 224, 0.3);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 0 12px var(--color-shadow);
   transition: transform 0.2s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 18px rgba(0, 255, 224, 0.6);
-}
-
-.manual, .pricing {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.manual h2, .pricing h2 {
-  color: #00ffe0;
-}
-
-.price {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #00ffe0;
-  margin-bottom: 20px;
-}
-
-.footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  background: #080808;
-  color: #666;
-  border-top: 1px solid #111;
 }
