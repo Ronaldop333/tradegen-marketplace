@@ -89,7 +89,7 @@ export default function Home() {
             transition: "all 0.6s ease",
           }}
         >
-          <h2 style={{ color: "var(--color-primary)" }}>TradGen IA PREDATOR</h2>
+          <h2 style={{ color: "var(--color-primary)" }}>TradGen PREDATOR - alta Performance</h2>
           <p style={{ fontWeight: "bold", marginTop: "1rem" }}>
             Quando a maioria entra atrasada, ele já está saindo com lucro.
           </p>
