@@ -1,7 +1,8 @@
 // frontend/pages/tradgen.tsx
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles.module.css'
+import styles from '../../styles.module.css'
+
 
 export default function TradGen() {
   return (
