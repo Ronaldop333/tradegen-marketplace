@@ -1,51 +1,58 @@
-:root {
-  /* 🎨 Paleta Dark refinada - Base */
-  --color-bg: #0a0a12;        /* Deep Space - mais escuro */
-  --color-bg-alt: #151522;    /* Neural Dark - para cards */
-  --color-text: #ffffff;      /* texto branco puro */
-  --color-muted: #a0a0c0;     /* texto neural azulado */
-  --color-border: #2d3748;
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import styles from '../styles/Header.module.css';
 
-  /* ⚡ Destaques Cyber - Mantendo sua identidade */
-  --color-primary: #00f0ff;   /* Cyber Blue - mais tecnológico */
-  --color-primary-dark: #00b39c;
-  --color-secondary: #00ff88; /* Matrix Green */
-  --color-accent: #8a2be2;    /* Neon Purple */
-  --color-shadow: rgba(0, 240, 255, 0.3);
+const Header: React.FC = () => {
+  const [scrolled, setScrolled] = useState(false);
 
-  /* 🌀 Novas cores para efeitos */
-  --color-grid: rgba(0, 240, 255, 0.1);
-  --color-glow: rgba(0, 240, 255, 0.5);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-  /* 🔠 Tipografia */
-  --font-base: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
-  --font-size-base: 16px;
-  --font-size-h1: 3rem;
-  --font-size-h2: 2rem;
+  return (
+    <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
+      <div className={styles.container}>
+        {/* Logo */}
+        <Link href="/" className={styles.logo}>
+          <div className={styles.logoHologram}>
+            <span className={styles.logoGlow}>TRADGEN</span>
+            <div className={styles.logoScanline} />
+          </div>
+        </Link>
 
-  /* 📏 Espaçamento */
-  --space-xs: 4px;
-  --space-sm: 8px;
-  --space-md: 16px;
-  --space-lg: 24px;
-  --space-xl: 40px;
+        {/* Menu Navigation */}
+        <nav className={styles.nav}>
+          <Link href="/" className={styles.navLink}>
+            <span className={styles.navIcon}>⟠</span>
+            HOME
+          </Link>
+          <Link href="/predator" className={styles.navLink}>
+            <span className={styles.navIcon}>⚡</span>
+            PREDATOR AI
+          </Link>
+          <Link href="/suite" className={styles.navLink}>
+            <span className={styles.navIcon}>🔮</span>
+            QUANTUM SUITE
+          </Link>
+          <Link href="/manual" className={styles.navLink}>
+            <span className={styles.navIcon}>📊</span>
+            NEURAL MANUAL
+          </Link>
+        </nav>
 
-  /* 🌈 Gradientes */
-  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-  --gradient-bg: linear-gradient(135deg, var(--color-bg) 0%, #0f0f1a 100%);
-}
+        {/* CTA Button */}
+        <div className={styles.ctaContainer}>
+          <Link href="/loja" className={styles.cyberButton}>
+            <span className={styles.buttonGlow}>ACCESS TERMINAL</span>
+          </Link>
+        </div>
+      </div>
+    </header>
+  );
+};
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: var(--gradient-bg);
-  color: var(--color-text);
-  font-family: var(--font-base);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-
+export default Header;
