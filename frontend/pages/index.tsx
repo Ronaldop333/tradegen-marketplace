@@ -1,5 +1,4 @@
 import React from "react";
-import ThemeToggle from "../components/ThemeToggle";
 
 export default function Home() {
   return (
@@ -14,12 +13,9 @@ export default function Home() {
         alignItems: "center",
         fontFamily: "Segoe UI, Roboto, sans-serif",
         padding: "2rem",
-        transition: "background 0.6s ease, color 0.6s ease",
       }}
     >
-      {/* Botão de Tema */}
-      <ThemeToggle />
-
+      {/* Logo */}
       <img
         src="/logo-tradgen.png"
         alt="TradGen Logo"
@@ -27,7 +23,6 @@ export default function Home() {
         style={{
           width: "140px",
           marginBottom: "2rem",
-          transition: "all 0.6s ease",
         }}
       />
 
@@ -36,7 +31,6 @@ export default function Home() {
           fontSize: "2.5rem",
           color: "var(--color-primary)",
           marginBottom: "1rem",
-          transition: "color 0.6s ease",
         }}
       >
         👋 Bem-vindo ao TradGen Marketplace
@@ -48,7 +42,6 @@ export default function Home() {
           textAlign: "center",
           fontSize: "1.1rem",
           color: "var(--color-muted)",
-          transition: "color 0.6s ease",
         }}
       >
         Desenvolvemos soluções inteligentes para o ambiente de trading.
@@ -63,7 +56,6 @@ export default function Home() {
           fontSize: "1.1rem",
           marginTop: "0.5rem",
           color: "var(--color-muted)",
-          transition: "color 0.6s ease",
         }}
       >
         Descubra o Tradgen System e seja um Trader de alta performance.
@@ -86,10 +78,12 @@ export default function Home() {
             padding: "2rem",
             width: "320px",
             boxShadow: "0 0 10px var(--color-shadow)",
-            transition: "all 0.6s ease",
+            transition: "transform 0.3s ease, box-shadow 0.3s ease",
           }}
         >
-          <h2 style={{ color: "var(--color-primary)" }}>TradGen PREDATOR - alta Performance</h2>
+          <h2 style={{ color: "var(--color-primary)" }}>
+            TradGen PREDATOR - alta Performance
+          </h2>
           <p style={{ fontWeight: "bold", marginTop: "1rem" }}>
             Quando a maioria entra atrasada, ele já está saindo com lucro.
           </p>
@@ -110,14 +104,13 @@ export default function Home() {
               borderRadius: "6px",
               fontWeight: "bold",
               textDecoration: "none",
-              transition: "background 0.2s ease",
             }}
           >
             Ver na Loja
           </a>
         </div>
 
-        {/* Produto 2: Suite Indicadors */}
+        {/* Produto 2: Suite Indicadores */}
         <div
           className="card"
           style={{
@@ -126,14 +119,14 @@ export default function Home() {
             padding: "2rem",
             width: "320px",
             boxShadow: "0 0 10px var(--color-shadow)",
-            transition: "all 0.6s ease",
+            transition: "transform 0.3s ease, box-shadow 0.3s ease",
           }}
         >
           <h2 style={{ color: "var(--color-primary)" }}>
-            TradGen SUITE INDICADORS
+            TradGen SUITE INDICADORES
           </h2>
           <p style={{ fontWeight: "bold", marginTop: "1rem" }}>
-            Suite indicadors... um pacote de Indicadores.
+            Suite indicadores... um pacote de Indicadores.
           </p>
           <p style={{ marginTop: "0.5rem" }}>
             Feito para quem busca setups objetivos, rápidos e limpos.
@@ -150,7 +143,6 @@ export default function Home() {
               borderRadius: "6px",
               fontWeight: "bold",
               textDecoration: "none",
-              transition: "background 0.2s ease",
             }}
           >
             Ver Suite
@@ -163,7 +155,6 @@ export default function Home() {
           marginTop: "4rem",
           fontSize: "0.9rem",
           color: "var(--color-muted)",
-          transition: "color 0.6s ease",
         }}
       >
         © 2025 TradGen. Todos os direitos reservados.
@@ -171,5 +162,6 @@ export default function Home() {
     </div>
   );
 }
+
 
 
