@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from '../styles/Header.module.css';
 
-const Header: React.FC = () => {
+const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -52,4 +52,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header; 
+export default Navbar;
