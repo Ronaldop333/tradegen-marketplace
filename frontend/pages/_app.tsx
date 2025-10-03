@@ -1,7 +1,7 @@
 import "../styles.css";
 import "../styles/globals.css";
 import Head from "next/head";
-import ThemeToggle from "../components/ThemeToggle";
+
 
 export default function App({ Component, pageProps }) {
   return (
