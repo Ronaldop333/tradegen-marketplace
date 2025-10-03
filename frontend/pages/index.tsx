@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Header from "../components/Header";
+import Navbar from "../components/Navbar";  // ✅ MUDOU PARA NAVBAR
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Navbar />  {/* ✅ MUDOU PARA NAVBAR */}
       
       <div
         style={{
@@ -24,10 +24,10 @@ export default function Home() {
           alignItems: "center",
           fontFamily: "Segoe UI, Roboto, sans-serif",
           padding: "2rem",
-          paddingTop: "120px", // ✅ Espaço para o header fixo
+          paddingTop: "120px", // ✅ Espaço para o navbar fixo
         }}
       >
-        {/* Logo - Opcional já que tem no header */}
+        {/* Logo - Opcional já que tem no navbar */}
         <img
           src="/logo-tradgen.png"
           alt="TradGen Logo"
