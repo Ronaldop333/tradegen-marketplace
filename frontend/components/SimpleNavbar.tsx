@@ -12,7 +12,8 @@ const SimpleNavbar: React.FC = () => {
       backdropFilter: 'blur(20px)',
       borderBottom: '1px solid var(--color-primary)',
       zIndex: 1000,
-      padding: '1rem 0'
+      padding: '1rem 0',
+      fontFamily: 'var(--font-base)'
     }}>
       <div style={{
         maxWidth: '1200px',
@@ -26,14 +27,37 @@ const SimpleNavbar: React.FC = () => {
           color: 'var(--color-primary)',
           fontSize: '1.5rem',
           fontWeight: 'bold',
-          textDecoration: 'none'
+          textDecoration: 'none',
+          textShadow: '0 0 10px var(--color-glow)'
         }}>
           TRADGEN
         </Link>
         
-        <div style={{ display: 'flex', gap: '2rem' }}>
-          <Link href="/" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Home</Link>
-          <Link href="/suite" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>Suite</Link>
+        <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
+          <Link href="/" style={{ 
+            color: 'var(--color-text)', 
+            textDecoration: 'none',
+            fontWeight: '600',
+            fontSize: '0.9rem'
+          }}>
+            HOME
+          </Link>
+          <Link href="/suite" style={{ 
+            color: 'var(--color-text)', 
+            textDecoration: 'none',
+            fontWeight: '600',
+            fontSize: '0.9rem'
+          }}>
+            SUITE
+          </Link>
+          <Link href="/predator" style={{ 
+            color: 'var(--color-text)', 
+            textDecoration: 'none',
+            fontWeight: '600',
+            fontSize: '0.9rem'
+          }}>
+            PREDATOR
+          </Link>
         </div>
       </div>
     </nav>
