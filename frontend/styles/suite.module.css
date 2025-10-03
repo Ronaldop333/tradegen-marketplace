@@ -37,9 +37,27 @@
   transition: all 0.4s ease;
 }
 
+
+
 /* Hover com glow neon */
 .card img:hover {
   transform: scale(1.02);
   box-shadow: 0 0 20px var(--color-primary);
+}
+/* Efeito neon pulsante no título */
+.header h1 {
+  font-size: var(--font-size-h1);
+  color: var(--color-primary);
+  text-shadow: 0 0 8px var(--color-shadow), 0 0 16px var(--color-primary);
+  animation: neonPulse 2.5s infinite ease-in-out;
+}
+
+@keyframes neonPulse {
+  0%, 100% {
+    text-shadow: 0 0 8px var(--color-shadow), 0 0 16px var(--color-primary);
+  }
+  50% {
+    text-shadow: 0 0 16px var(--color-primary), 0 0 32px var(--color-primary-dark);
+  }
 }
 
