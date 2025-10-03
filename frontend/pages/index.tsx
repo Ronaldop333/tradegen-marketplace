@@ -1,6 +1,9 @@
 import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";  // ✅ MUDOU PARA NAVBAR
+import SimpleNavbar from "../components/SimpleNavbar";  // ✅ NOVO IMPORT
+// ...
+<SimpleNavbar />  {/* ✅ NOVO COMPONENTE */}
 
 export default function Home() {
   return (
