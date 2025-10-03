@@ -16,7 +16,6 @@ const Header: React.FC = () => {
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
-        {/* Logo */}
         <Link href="/" className={styles.logo}>
           <div className={styles.logoHologram}>
             <span className={styles.logoGlow}>TRADGEN</span>
@@ -24,7 +23,6 @@ const Header: React.FC = () => {
           </div>
         </Link>
 
-        {/* Menu Navigation */}
         <nav className={styles.nav}>
           <Link href="/" className={styles.navLink}>
             <span className={styles.navIcon}>⟠</span>
@@ -44,7 +42,6 @@ const Header: React.FC = () => {
           </Link>
         </nav>
 
-        {/* CTA Button */}
         <div className={styles.ctaContainer}>
           <Link href="/loja" className={styles.cyberButton}>
             <span className={styles.buttonGlow}>ACCESS TERMINAL</span>
