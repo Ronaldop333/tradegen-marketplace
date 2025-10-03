@@ -95,7 +95,7 @@ export default function Home() {
           </p>
           <p style={{ marginTop: "0.5rem" }}>
             Especialista em Gráficos Renko com foco no 50R. Ideal para quem
-            busca Lucros Consistentes.
+            busca Lucros Consistentes com gerencimento do risco.
           </p>
           <a
             href="https://loja.nelogica.com.br"
